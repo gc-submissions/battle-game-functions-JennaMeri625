@@ -7,13 +7,13 @@
 // has no parameters and returns a 
 // random integer between 1 and 10.
 
-const randomDamage =() => ;
+const randomDamage =() => Math.random();
 
 // Declare an arrow function named 
 // chooseOption that has two parameters
 // named opt1 and opt2.
 
-const chooseOption = (opt1, opt2) => 
+const chooseOption = (opt1, opt2) => randNum = 0 || 1;
 
 
 // chooseOption does two things: 
@@ -25,7 +25,8 @@ const chooseOption = (opt1, opt2) =>
 // ternary operator)
 
 let randNum = 0;
-const randNum2 = randNum != 0 ? ${opt1} : ${opt2};
+let opt2 = 1;
+const randNum2 = randNum != 0 ? opt1 : opt2;
 
 // Declare a function expression named 
 // attackPlayer that has one parameter 
@@ -114,9 +115,8 @@ console.log(logHealth(player2, player2health));
 // player1 and player1Health as its 
 // arguments.
 
-if (isDead(player2Health) = true){
+if (isDead(player2Health)){
     console.log(logDeath (player1, player2));
-    break;
 } else {
     player1Health = attackPlayer(player1Health);
     console.log(logHealth (player1, player1Health));
@@ -128,9 +128,8 @@ if (isDead(player2Health) = true){
 // player2 and player1 as arguments.
 // Break
 
-if (isDead(player1Health) = true){
+if (isDead(player1Health)){
     console.log(logDeath(player2, player1));
-    break;
 }
 
 // Lastly, call the fight function with 
