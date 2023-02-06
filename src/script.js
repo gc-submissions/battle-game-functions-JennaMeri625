@@ -7,7 +7,10 @@ const randomDamage = () => Math.floor(Math.random() * 10 ) + 1;
                                                 
 let randNum = null;
 
-let chooseOption = (opt1, opt2) => randNum = (Math.random() > 0.5 ? 1 : 0) == 0 ? opt1 : opt2;
+let chooseOption = (opt1, opt2) => {
+    const randNum = Math.round(Math.random());
+    return randNum === 0 ? opt1 : opt2;
+}
 
 function attackPlayer(health) {
     return Number(health) - randomDamage();
